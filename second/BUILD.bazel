@@ -1,0 +1,9 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "go_default_library",
+    srcs = ["second.go"],
+    importpath = "github.com/trystanj/external-proto/second",
+    visibility = ["//visibility:public"],
+    deps = ["@com_github_trystanj_proto//:sample_go_proto"],
+)
