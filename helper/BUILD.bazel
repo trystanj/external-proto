@@ -1,0 +1,9 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "go_default_library",
+    srcs = ["helper.go"],
+    importpath = "github.com/trystanj/external-proto/helper",
+    visibility = ["//visibility:public"],
+    deps = ["@com_github_trystanj_proto//group:go_default_library"],
+)
