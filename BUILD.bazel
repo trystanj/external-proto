@@ -10,14 +10,7 @@ go_library(
     srcs = ["main.go"],
     importpath = "github.com/trystanj/external-proto",
     visibility = ["//visibility:private"],
-    deps = ["//helper:go_default_library"],
-)
-
-go_binary(
-    name = "exproto",
-    importpath = "github.com/trystanj/external-proto",
-    library = ":go_default_library",
-    visibility = ["//visibility:public"],
+    deps = ["//second:go_default_library"],
 )
 
 go_binary(

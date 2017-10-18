@@ -12,6 +12,6 @@ proto_register_toolchains()
 
 git_repository(
     name = "com_github_trystanj_proto",
-    commit = "72b5fee4fcb62697cdb29657f550110480a7eb39",
+    commit = "afcd53ccc74c08916ce249c1748ce289cc183b5e",
     remote = "https://github.com/trystanj/proto",
 )
